@@ -7,6 +7,62 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <div class="left-container">
+    <div class="logo-wrapper">
+      <img class="logo-img" src="images/odin-lined.png" alt="odin logo">
+      <h1 class="logo-text">ODIN</h1>
+    </div>
+    <p class="attribution">Photo by <a href="https://unsplash.com/@lumin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lumin</a> on <a href="https://unsplash.com/photos/black-labeled-plastic-containers-vI6H47wyOGY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </p>
+  </div>
+  <div class="right-container">
+    <div class="form-desc">
+      <p class="line-one">
+        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+      </p>
+      <p class="line-two">Sign up <em>now</em> to get started.</p>
+      <p class="line-three">You <em>know</em> you want to.</p>
+    </div>
+    <div class="form-container">
+      <form action="#" id="my-form" method="post" onsubmit="return false;">
+        <h2>Let's do this!</h2>
+        <div class="full-name">
+          <div>
+            <label for="first_name">FIRST NAME*</label>
+            <input type="text" name="first_name" id="first_name" required>
+          </div>
+          <div>
+            <label for="last_name">LAST NAME*</label>
+            <input type="text" name="last_name" id="last_name" required>
+          </div>
+        </div>
+        <div class="email-phone">
+          <div>
+            <label for="email">EMAIL*</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="phone">PHONE NUMBER*</label>
+            <input type="tel" name="phone" id="phone" required>
+          </div>
+        </div>
+        <div class="password">
+          <div>
+            <label for="passwd">PASSWORD*</label>
+            <input type="password" name="passwd" id="passwd" minlength="8" required>
+          </div>
+          <div>
+            <label for="confirm-passwd">CONFIRM PASSWORD*</label>
+            <input type="password" name="confirm-passwd" id="confirm-passwd" minlength="8" required>
+          </div>
+        </div>
+        <p class="required-field">*Required Field</p>
+      </form>
+    </div>
+    <div class="form-submit">
+      <button class="submit-btn" type="submit" form="my-form">Create Account</button>
+      <p class="login">Already have an account? <a href="#">Log In</a></p>
+    </div>
+  </div>
 </body>
 </html>
